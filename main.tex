@@ -1,0 +1,116 @@
+%%
+%% This is file `example_DarkConsole.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% examples_kmbeamer.dtx  (with options: `DarkConsole')
+%% Copyright (c) 2011-2013 Kazuki Maeda <kmaeda@users.sourceforge.jp>
+%% 
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%% 
+
+%%% もし pdfTeX や LuaTeX を使うなら dvipdfmx オプションを外す．
+% \documentclass[dvipdfmx]{beamer}
+
+% Modified by LianTze Lim to work with fontspec/xelatex
+\documentclass{beamer}
+\usepackage{mathspec}
+\usepackage{xeCJK}
+\setCJKmainfont{IPAPMincho}
+\setCJKsansfont{IPAGothic}
+\setCJKmonofont{IPAGothic}
+
+% You can set fonts for Latin script here
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{Latin Modern Mono}
+
+\usetheme{DarkConsole}
+
+%%% もし pTeX + dvipdfmx を使うならば以下のどちらかを環境に合わせてコメントアウト．
+%% \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}} % EUC の場合
+%% \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}} % SJIS の場合
+
+%%% もし LuaTeX で日本語を出力するなら以下をコメントアウト．
+%% \usefonttheme{luatexja}
+%% \hypersetup{unicode}
+
+%%% LLT: Comment out this line if your presentation is in English or other European languages
+%\setbeamertemplate{theorems}[normal font]
+
+% for crossing words
+\usepackage{soul}
+
+\title{home brewing for waterfall developers}
+\subtitle{|}
+\author{michał kret\footnote{\texttt{michal.b.kret@jpmchase.com}}}
+
+\begin{document}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}{copylefts}
+    This presentation was made in \LaTeX using Beamer document class.
+    
+    Template DarkConsole made by Kazuki Maeda <kmaeda@kmaeda.net> and distributed on MIT license.
+\end{frame}
+
+\begin{frame}{beer development lifecycle}
+  \tableofcontents
+\end{frame}
+
+\section{beer development lifecycle}
+\begin{frame}{software development lifecycle}
+      tu obrazek
+\end{frame}
+
+\begin{frame}{\st{software} beer development lifecycle}
+      n obrazków do wersji z samym piwem
+\end{frame}
+
+\section{テスト}
+
+\begin{frame}{テスト1}
+  これはテストです．
+
+  \pause
+
+  \begin{enumerate}
+  \item リスト1\pause
+  \item リスト2\pause
+  \item リスト3
+  \end{enumerate}
+
+  \pause
+
+  \begin{itemize}
+  \item リスト1\pause
+  \item リスト2\pause
+  \item リスト3
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{テスト2}
+  数式のテスト．
+
+  \begin{theorem}[Gauss積分]
+    以下の等式が成り立つ：
+    \begin{equation}
+      \int_{-\infty}^\infty \mathrm{e}^{-x^2}\,\mathrm{d}x=\sqrt{\pi}.
+    \end{equation}
+  \end{theorem}
+\end{frame}
+
+\section{もっとテスト}
+\begin{frame}
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+\end{frame}
+\end{document}
+\endinput
+%%
+%% End of file `example_DarkConsole.tex'.
